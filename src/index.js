@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Navbar from './Component/Navbar';
+import Sectionfirst from './Component/Sectionfirst';
+import Credential from './Component/Credential';
+import Sectiontwo from './Component/Sectiontwo';
+import Ourproducts from './Component/Ourproducts';
+// import { ReactComponent as MySvgFile } from './images/books-icon.svg';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <Navbar />
+    <Credential/>
+    <Sectionfirst/>
+    <Sectiontwo/>
+    <Ourproducts/>
+    {/* <MySvgFile/> */}
+
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
